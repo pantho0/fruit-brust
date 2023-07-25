@@ -20,6 +20,12 @@
     .font-lato {
       font-family: 'Lato', sans-serif;
     }
+    .my-banner{
+      z-index: 0;
+    }
+    .my-fruits{
+      z-index: 10;
+    }
   </style>
   <!-- ========== -->
 
@@ -73,8 +79,8 @@
     </nav>
     <!-- Banner Codes Here -->
     <section class="container mx-auto">
-      <div class="carousel w-full text-center ">
-        <div id="slide1" class="carousel-item relative w-full">
+      <div class="carousel w-full text-center min-h-screen">
+        <div id="slide1" class="carousel-item justify-center relative w-full">
           <div>
             <img src="images/banner1.png" class="w-full brightness-50" />
             <div class="relative -top-1/2 space-y-4">
@@ -91,7 +97,7 @@
             <a href="#slide2" class="btn btn-circle">❯</a>
           </div>
         </div>
-        <div id="slide2" class="carousel-item relative w-full">
+        <div id="slide2" class="carousel-item relative w-full justify-center ">
           <div>
             <img src="images/banner2.png" class="w-full brightness-50" />
             <div class="relative -top-1/2 space-y-4">
@@ -108,7 +114,7 @@
             <a href="#slide3" class="btn btn-circle">❯</a>
           </div>
         </div>
-        <div id="slide3" class="carousel-item relative w-full">
+        <div id="slide3" class="carousel-item relative w-full justify-center ">
           <div>
             <img src="images/banner3.png" class="w-full brightness-50" />
             <div class="relative -top-1/2 space-y-4">
@@ -125,7 +131,7 @@
             <a href="#slide4" class="btn btn-circle">❯</a>
           </div>
         </div>
-        <div id="slide4" class="carousel-item relative w-full">
+        <div id="slide4" class="carousel-item relative w-full justify-center ">
           <div>
             <img src="images/banner4.png" class="w-full brightness-50" />
             <div class="relative -top-1/2 space-y-4">
@@ -146,8 +152,9 @@
     </section>
   </header>
   <main>
-    <section class="container mx-auto">
-      <div class="fruits-container grid grid-cols-5">
+    <!-- Fruits Image Code Here -->
+    <section class="container mx-auto relative">
+      <div class="fruits-container flex justify-evenly mx-32 -mt-72 relative bg-white shadow-md p-7">
         <img src="images/fruit1.png" alt="">
         <img src="images/fruit2.png" alt="">
         <img src="images/fruit3.png" alt="">
@@ -155,9 +162,50 @@
         <img src="images/fruit5.png" alt="">
       </div>
     </section>
+    <!-- Deal of the day code here -->
+    <section class="container mx-auto py-20">
+      <div class="flex justify-between">
+        <div class="space-y-3">
+          <h3 class="text-5xl font-extrabold text-[#121212]">Deal of the day</h3>
+          <p class="text-slate-400 font-medium">Contrary to popular belief, is not simply random text. It has roots in a piece of classical
+            <br> Latin literature from 45 BC, making it over 2000 years old.</p>
+        </div>
+        <div>
+          <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value:15;"></span>
+              </span>
+              days
+            </div> 
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value:10;"></span>
+              </span>
+              hours
+            </div> 
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value:24;"></span>
+              </span>
+              min
+            </div> 
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value:26;"></span>
+              </span>
+              sec
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+
+      </div>
+    </section>
   </main>
   <footer>
-
+    
   </footer>
 </body>
 
