@@ -2,39 +2,78 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fruit-Brust</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
-    <!-- ============ -->
-    <!-- Font-Awesome -->
-    <script src="https://kit.fontawesome.com/74e4f839ab.js" crossorigin="anonymous"></script>
-    <!-- ============ -->
-    <!-- Custom Css -->
-    <style>
-        .font-lato{
-            font-family: 'Lato', sans-serif;
-        }
-    </style>
-    <!-- ========== -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fruit-Brust</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+  <!-- ============ -->
+  <!-- Font-Awesome -->
+  <script src="https://kit.fontawesome.com/74e4f839ab.js" crossorigin="anonymous"></script>
+  <!-- ============ -->
+  <!-- Custom Css -->
+  <style>
+    .font-lato {
+      font-family: 'Lato', sans-serif;
+    }
+  </style>
+  <!-- ========== -->
 
 </head>
 
 <body class="font-lato">
-    <header>
-        
-    </header>
-    <main>
+  <header>
+    <nav class="container mx-auto">
+      <div class="navbar bg-[#F85559] rounded-full my-9">
+        <div class="navbar-start hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 text-white">
+            <li><a>Home</a></li>
+            <li><a>About Us</a></li>
+            <li><a>Shop</a></li>
+            <li><a>All Fruits</a></li>
+          </ul>
+        </div>
+        <div class="navbar-center">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </label>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a>Item 1</a></li>
+              <li>
+                <a>Parent</a>
+                <ul class="p-2">
+                  <li><a>Submenu 1</a></li>
+                  <li><a>Submenu 2</a></li>
+                </ul>
+              </li>
+              <li><a>Item 3</a></li>
+            </ul>
+          </div>
+          <div class="flex gap-2 items-center text-white text-3xl font-bold">
+            <img src="images/logo.png" alt="">
+            <p>Fruit Burst</p>
+          </div>
+        </div>
+        <div class="navbar-end pr-6">
+          <div class="form-control relative">
+            <input type="text" placeholder="Search Here" class="input input-bordered w-24 md:w-auto rounded-full" />
+            <i class="fa-solid fa-magnifying-glass absolute top-4 right-5 cursor-pointer"></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
 
-    </main>
-    <footer>
+  </main>
+  <footer>
 
-    </footer>
+  </footer>
 </body>
 
 </html>
