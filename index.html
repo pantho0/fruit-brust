@@ -20,10 +20,12 @@
     .font-lato {
       font-family: 'Lato', sans-serif;
     }
-    .my-banner{
+
+    .my-banner {
       z-index: 0;
     }
-    .my-fruits{
+
+    .my-fruits {
       z-index: 10;
     }
   </style>
@@ -79,7 +81,7 @@
     </nav>
     <!-- Banner Codes Here -->
     <section class="container mx-auto">
-      <div class="carousel w-full text-center min-h-screen">
+      <div class="carousel w-full text-center">
         <div id="slide1" class="carousel-item justify-center relative w-full">
           <div>
             <img src="images/banner1.png" class="w-full brightness-50" />
@@ -92,7 +94,7 @@
               <button class="btn btn-error pointer bg-[#F85559] text-white  ">Shop Now</button>
             </div>
           </div>
-          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/3 px-8">
             <a href="#slide4" class="btn btn-circle">❮</a>
             <a href="#slide2" class="btn btn-circle">❯</a>
           </div>
@@ -109,7 +111,7 @@
               <button class="btn btn-error pointer bg-[#F85559] text-white  ">Shop Now</button>
             </div>
           </div>
-          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/3 px-8">
             <a href="#slide4" class="btn btn-circle">❮</a>
             <a href="#slide3" class="btn btn-circle">❯</a>
           </div>
@@ -126,7 +128,7 @@
               <button class="btn btn-error pointer bg-[#F85559] text-white  ">Shop Now</button>
             </div>
           </div>
-          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/3 px-8">
             <a href="#slide2" class="btn btn-circle">❮</a>
             <a href="#slide4" class="btn btn-circle">❯</a>
           </div>
@@ -143,7 +145,7 @@
               <button class="btn btn-error pointer bg-[#F85559] text-white  ">Shop Now</button>
             </div>
           </div>
-          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/3 px-8">
             <a href="#slide3" class="btn btn-circle">❮</a>
             <a href="#slide1" class="btn btn-circle">❯</a>
           </div>
@@ -167,8 +169,10 @@
       <div class="flex justify-between">
         <div class="space-y-3">
           <h3 class="text-5xl font-extrabold text-[#121212]">Deal of the day</h3>
-          <p class="text-slate-400 font-medium">Contrary to popular belief, is not simply random text. It has roots in a piece of classical
-            <br> Latin literature from 45 BC, making it over 2000 years old.</p>
+          <p class="text-slate-400 font-medium">Contrary to popular belief, is not simply random text. It has roots in a
+            piece of classical
+            <br> Latin literature from 45 BC, making it over 2000 years old.
+          </p>
         </div>
         <div>
           <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
@@ -177,19 +181,19 @@
                 <span style="--value:15;"></span>
               </span>
               days
-            </div> 
+            </div>
             <div class="flex flex-col">
               <span class="countdown font-mono text-5xl">
                 <span style="--value:10;"></span>
               </span>
               hours
-            </div> 
+            </div>
             <div class="flex flex-col">
               <span class="countdown font-mono text-5xl">
                 <span style="--value:24;"></span>
               </span>
               min
-            </div> 
+            </div>
             <div class="flex flex-col">
               <span class="countdown font-mono text-5xl">
                 <span style="--value:26;"></span>
@@ -199,13 +203,143 @@
           </div>
         </div>
       </div>
-      <div>
+      <!-- Cards Code Here -->
+      <div class="flex justify-around gap-7">
+        <div class="card w-96 bg-base-100 shadow-xl mt-10 border">
+          <figure><img src="images/fruit6.png" alt="Shoes" class="py-5" /></figure>
+          <div class="card-body">
+            <h2 class="card-title justify-center">12.90$ - 18.85$</h2>
+            <hr>
+            <p class="text-center">Apples</p>
+            <div>
+              <div class="rating flex justify-center">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              </div>
+            </div>
+            <a href="" class="text-center">Details</a>
+          </div>
+        </div>
+        <div class="card w-96 bg-base-100 shadow-xl mt-10 border">
+          <figure><img src="images/fruit7.png" alt="Shoes" class="py-5" /></figure>
+          <div class="card-body">
+            <h2 class="card-title justify-center">12.90$ - 18.85$</h2>
+            <hr>
+            <p class="text-center">Apples</p>
+            <div>
+              <div class="rating flex justify-center">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              </div>
+            </div>
+            <a href="" class="text-center">Details</a>
+          </div>
+        </div>
+        <div class="card w-96 bg-base-100 shadow-xl mt-10 border">
+          <figure><img src="images/fruit8.png" alt="Shoes" class="py-5" /></figure>
+          <div class="card-body">
+            <h2 class="card-title justify-center">12.90$ - 18.85$</h2>
+            <hr>
+            <p class="text-center">Apples</p>
+            <div>
+              <div class="rating flex justify-center">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              </div>
+            </div>
+            <a href="" class="text-center">Details</a>
+          </div>
+        </div>
+        <div class="card w-96 bg-base-100 shadow-xl mt-10 border">
+          <figure><img src="images/fruit9.png" alt="Shoes" class="py-5" /></figure>
+          <div class="card-body">
+            <h2 class="card-title justify-center">12.90$ - 18.85$</h2>
+            <hr>
+            <p class="text-center">Apples</p>
+            <div>
+              <div class="rating flex justify-center">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              </div>
+            </div>
+            <a href="" class="text-center">Details</a>
+          </div>
+        </div>
+      </div>
+      <button class="block mx-auto btn btn-error pointer bg-[#F85559] text-white mt-10 mb-10">Shop Now</button>
+    </section>
+    <!-- Team Codes Here -->
+    <section class="container mx-auto bg-[url('../images/team.png')] bg-cover  bg-no-repeat bg-blend-soft-light py-20" >
+      <div class="relative top-2/4">
+        <h2 class="text-white text-5xl font-extrabold text-center">Meet the team section</h2>
+        <p class="text-white font-medium text-center">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature
+          from 45 BC, making it over 2000 years old.</p>
+        <!-- Team Identity -->
+        <div class="flex justify-evenly mt-8">
+          <!-- Member-1 -->
+          <div class="text-white text-center">
+            <img src="images/member1.png" alt="" class="m-0">
+            <h4 class="text-2xl font-bold">Awlad Hossain</h4>
+            <p class="font-medium mb-3">Fruits Expert</p>
+            <div class="flex gap-2 items-center justify-center">
+              <i class="fa-brands fa-facebook-f bg-[#F85559] p-2 rounded-full cursor-pointer"></i>
+              <i class="fa-brands fa-twitter bg-[#F85559] p-2 rounded-full cursor-pointer"></i>
+              <i class="fa-brands fa-linkedin-in bg-[#F85559] p-2 rounded-full cursor-pointer"></i>
+            </div>
+          </div>
+          <!-- Member-2 -->
+          <div class="text-white text-center">
+            <img src="images/member2.png" alt="">
+            <h4 class="text-2xl font-bold">Safia Chowdhury</h4>
+            <p class="font-medium mb-3">Fruits Expert</p>
+            <div class="flex gap-2 items-center justify-center">
+              <i class="fa-brands fa-facebook-f bg-[#F85559] p-2 rounded-full cursor-pointer"></i>
+              <i class="fa-brands fa-twitter bg-[#F85559] p-2 rounded-full cursor-pointer"></i>
+              <i class="fa-brands fa-linkedin-in bg-[#F85559] p-2 rounded-full cursor-pointer"></i>
+            </div>
+          </div>
+          <!-- Member-3 -->
+          <div class="text-white text-center">
+            <img src="images/member3.png" alt="">
+            <h4 class="text-2xl font-bold">Rokib Hossain</h4>
+            <p class="font-medium mb-3">Fruits Expert</p>
+            <div class="flex gap-2 items-center justify-center">
+              <i class="fa-brands fa-facebook-f bg-[#F85559] p-2 rounded-full cursor-pointer"></i>
+              <i class="fa-brands fa-twitter bg-[#F85559] p-2 rounded-full cursor-pointer"></i>
+              <i class="fa-brands fa-linkedin-in bg-[#F85559] p-2 rounded-full cursor-pointer"></i>
+            </div>
+          </div>
+          <!-- Member-4 -->
+          <div class="text-white text-center">
+            <img src="images/member4.png" alt="">
+            <h4 class="text-2xl font-bold">Chaity</h4>
+            <p class="font-medium mb-3">Fruits Expert</p>
+            <div class="flex gap-2 items-center justify-center">
+              <i class="fa-brands fa-facebook-f bg-[#F85559] p-2 rounded-full cursor-pointer"></i>
+              <i class="fa-brands fa-twitter bg-[#F85559] p-2 rounded-full cursor-pointer"></i>
+              <i class="fa-brands fa-linkedin-in bg-[#F85559] p-2 rounded-full cursor-pointer"></i>
+            </div>
+          </div>
+          
 
+        </div>
       </div>
     </section>
   </main>
   <footer>
-    
+
   </footer>
 </body>
 
