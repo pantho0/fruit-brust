@@ -35,8 +35,8 @@
 
 <body class="font-lato">
   <header>
-    <!-- Navbar Codes Here -->
-    <nav class="container mx-auto">
+    <!-- Navbar Codes Here (For Desktop Screen)-->
+    <nav class="container mx-auto hidden md:block">
       <div class="navbar bg-[#F85559] rounded-full my-9">
         <div class="navbar-start hidden lg:flex">
           <ul class="menu menu-horizontal px-1 text-white">
@@ -79,6 +79,34 @@
         </div>
       </div>
     </nav>
+    <!-- ===================================== -->
+    <!-- Navbar Codes Here (For Mobile Screen) -->
+    <nav class="container mx-auto block md:hidden">
+      <div class="navbar bg-white">
+        <div class="navbar-start">
+          <div class="flex items-center text-black text-3xl font-bold">
+            <img src="images/logo.png" alt="">
+            <p>Fruit Burst</p>
+          </div>
+        </div>
+        <div class="navbar-end">
+          <div class="dropdown mr-8">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </label>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-20">
+              <li><a>Home</a></li>
+              <li><a>About Us</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All Fruits</a></li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ===================================== -->
     <!-- Banner Codes Here -->
     <section class="container mx-auto">
       <div class="carousel w-full text-center">
@@ -562,6 +590,8 @@
         </div>
       </div> 
     </footer>
+    <!-- ================== -->
+   
 </body>
 
 </html>
