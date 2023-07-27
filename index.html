@@ -232,7 +232,8 @@
       <div class="flex flex-col items-center md: lg:flex-row justify-between">
         <div class="space-y-3 text-center md:text-left">
           <h3 class="text-4xl md:text-5xl text-center font-extrabold text-[#121212] lg:text-left">Deal of the day</h3>
-          <p class="text-slate-400 font-medium md:text-center py-5 lg:text-left">Contrary to popular belief, is not simply random text. It has roots in a
+          <p class="text-slate-400 font-medium md:text-center py-5 lg:text-left">Contrary to popular belief, is not
+            simply random text. It has roots in a
             piece of classical
             <br> Latin literature from 45 BC, making it over 2000 years old.
           </p>
@@ -283,7 +284,31 @@
                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
               </div>
             </div>
-            <a href="" class="text-center">Details</a>
+            <div class="text-center">
+              <!-- Open the modal using ID.showModal() method -->
+              <button class="" onclick="my_modal_5.showModal()">Details</button>
+              <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                <form method="dialog" class="modal-box">
+                  <img src="images/fruit6.png" alt="" class="mx-auto">
+                  <h3 class="font-bold text-lg py-2">Apple</h3>
+                  <p class="py-4">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                  <div>
+                    <div class="rating flex justify-center">
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    </div>
+                  </div>
+                  <div class="modal-action justify-center">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn bg-white text-[#F85559] border-1 border-[# F85559]">Close</button>
+                    <button class="btn bg-[#F85559] text-white">Bye Now</button>
+                  </div>
+                </form>
+              </dialog>
+            </div>
           </div>
         </div>
         <div class="card w-96 bg-base-100 shadow-xl mt-10 border">
@@ -347,7 +372,8 @@
     <section class="container mx-auto bg-[url('./images/team.png')] bg-cover  bg-no-repeat bg-blend-soft-light py-20">
       <div class="relative top-2/4">
         <h2 class="text-white text-3xl font-bold  md:text-5xl font-extrabold text-center">Meet the team section</h2>
-        <p class="text-white text-xs font-bold py-3 md:text-base font-medium text-center">Contrary to popular belief, is not simply random text. It has
+        <p class="text-white text-xs font-bold py-3 md:text-base font-medium text-center">Contrary to popular belief, is
+          not simply random text. It has
           roots in a piece of classical <br> Latin literature
           from 45 BC, making it over 2000 years old.</p>
         <!-- Team Identity -->
@@ -404,7 +430,8 @@
     <!-- Why Choose Us Section -->
     <section class="container mx-auto py-20">
       <h1 class="text-center text-3xl font-bold md:text-5xl font-extrabold">Why Choose Us</h1>
-      <p class="text-xs text-bold  text-center md:text-base text-center py-10">Contrary to popular belief, is not simply random text. It has roots in a piece of
+      <p class="text-xs text-bold  text-center md:text-base text-center py-10">Contrary to popular belief, is not simply
+        random text. It has roots in a piece of
         classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
       <div class="flex flex-col items-center md:flex justify-center lg:grid grid-cols-3 gap-5 py-7">
         <!-- left Part for Desktop & tablet Screen -->
